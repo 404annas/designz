@@ -213,7 +213,7 @@ const Transformations = () => {
                   onClick={scrollToContact}
                   className="text-xs tracking-wider uppercase font-normal text-[#2a1f1f] border-b border-[#2a1f1f]/30 pb-1 hover:scale-95 transition-all duration-300 cursor-pointer"
                 >
-                  Explore Creativity
+                  Contact Us
                 </button>
               </div>
             </motion.div>

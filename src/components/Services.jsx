@@ -54,11 +54,11 @@ const Services = () => {
         </div>
 
         {/* Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-x-10 gap-y-10">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-x-6 gap-y-10">
           {services.slice(0, 3).map((service, index) => (
             <div key={index} className="group relative flex flex-col items-start cursor-pointer bg-gray-200 rounded-3xl p-6">
               {/* Decorative Circle - Top Right of Card */}
-              <div className="absolute -top-8 -right-8 w-20 h-20 rounded-full bg-gradient-to-br from-gray-300 to-gray-400 opacity-40 group-hover:opacity-60 transition-opacity duration-300" />
+              {/* <div className="absolute -top-8 -right-8 w-20 h-20 rounded-full bg-gradient-to-br from-gray-300 to-gray-400 opacity-40 group-hover:opacity-60 transition-opacity duration-300" /> */}
 
               {/* Icon Container */}
               <div className="mb-8 flex h-14 w-14 items-center justify-center rounded-xl transition-all duration-500 bg-black text-white">
@@ -75,13 +75,13 @@ const Services = () => {
                 </p>
 
                 {/* Minimalist Action Link */}
-                <button
+                {/* <button
                   onClick={scrollToContact}
                   className="mt-auto flex items-center gap-2 text-sm font-semibold text-gray-900 cursor-pointer"
                 >
                   Learn more
                   <ArrowRight className="w-4 h-4 transition-all duration-300 group-hover:translate-x-1" />
-                </button>
+                </button> */}
               </div>
 
               {/* Subtle Decorative Line (Desktop only) */}
@@ -91,11 +91,11 @@ const Services = () => {
         </div>
 
         {/* Second Row - Centered 2 Items */}
-        <div className="mt-12 flex flex-wrap justify-center gap-x-10 gap-y-10">
+        <div className="mt-12 flex flex-wrap justify-center gap-x-6 gap-y-10">
           {services.slice(3).map((service, index) => (
             <div key={index + 3} className="group relative flex flex-col items-start cursor-pointer md:w-[calc(33.333%-1rem)] bg-gray-200 rounded-3xl p-6">
               {/* Decorative Circle - Top Right of Card */}
-              <div className="absolute -top-8 -right-8 w-20 h-20 rounded-full bg-gradient-to-br from-gray-300 to-gray-400 opacity-40 group-hover:opacity-60 transition-opacity duration-300" />
+              {/* <div className="absolute -top-8 -right-8 w-20 h-20 rounded-full bg-gradient-to-br from-gray-300 to-gray-400 opacity-40 group-hover:opacity-60 transition-opacity duration-300" /> */}
 
               {/* Icon Container */}
               <div className="mb-8 flex h-14 w-14 items-center justify-center rounded-xl transition-all duration-500 bg-black text-white">
@@ -112,13 +112,13 @@ const Services = () => {
                 </p>
 
                 {/* Minimalist Action Link */}
-                <button
+                {/* <button
                   onClick={scrollToContact}
                   className="mt-auto flex items-center gap-2 text-sm font-semibold text-gray-900 cursor-pointer"
                 >
                   Learn more
                   <ArrowRight className="w-4 h-4 transition-all duration-300 group-hover:translate-x-1" />
-                </button>
+                </button> */}
               </div>
             </div>
           ))}
