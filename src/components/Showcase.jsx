@@ -1,34 +1,40 @@
 import React from 'react';
 
+import gallery1 from "@/assets/gallery1.webp"
+import gallery2 from "@/assets/gallery2.webp"
+import gallery3 from "@/assets/gallery3.webp"
+import gallery4 from "@/assets/gallery4.webp"
+import gallery5 from "@/assets/gallery5.webp"
+
 const projects = [
   {
-    title: "Minimalist Loft",
+    title: "Biophillic Oasis",
     category: "Modern",
-    image: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=100&w=2000",
+    image: gallery5.src,
     gridClass: "md:col-span-2 md:row-span-2" 
   },
   {
-    title: "Contemporary Kitchen",
+    title: "Living Room - Boho",
     category: "Luxury",
-    image: "https://images.unsplash.com/photo-1503174971373-b1f69850bded?w=2000&auto=format&fit=crop&q=100&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGludGVyaW9yJTIwZGVzaWdufGVufDB8fDB8fHww",
+    image: gallery2.src,
     gridClass: "md:col-span-1 md:row-span-1"
   },
   {
-    title: "Urban Studio",
+    title: "Cheam Surrey",
     category: "Small Spaces",
-    image: "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?q=100&w=2000",
+    image: gallery3.src,
     gridClass: "md:col-span-1 md:row-span-1"
   },
   {
-    title: "Classic Penthouse",
+    title: "Classic Kitchen",
     category: "Luxury",
-    image: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=100&w=2000",
+    image: gallery1.src,
     gridClass: "md:col-span-1 md:row-span-2"
   },
   {
-    title: "Nordic Living",
+    title: "BAR",
     category: "Modern",
-    image: "https://images.unsplash.com/photo-1664711942326-2c3351e215e6?w=2000&auto=format&fit=crop&q=100&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGludGVyaW9yJTIwZGVzaWdufGVufDB8fDB8fHww",
+    image: gallery4.src,
     gridClass: "md:col-span-2 md:row-span-2"
   }
 ];
