@@ -12,11 +12,10 @@ const ContactForm = () => {
         <div className="flex-1 flex flex-col justify-center">
           <div className="mb-10">
             <h2 className="text-4xl md:text-5xl font-light tracking-tight text-[#1a1a1a] mb-4 uppercase font-serif">
-              Project <span className="">Enquiries</span>
+              Get In Touch
             </h2>
-            <p className="text-gray-500 max-w-lg leading-normal font-regular">
-              Our studio is currently accepting select commissions for high-end residential projects. 
-              Please provide your details below to schedule an initial consultation.
+            <p className="text-gray-500 max-w-xl leading-normal font-regular">
+              Are you planning to design your project but don’t know how to shape it? Leave your information for immediate consultation.
             </p>
           </div>
 

@@ -54,17 +54,16 @@ const Hero = () => {
           </div>
 
           <h1 className="animate-fade-up-delayed mx-auto max-w-5xl font-serif text-3xl leading-18 tracking-tight md:text-5xl lg:text-6xl xl:text-[5rem]">
-            We Create Thoughtful Spaces
+            Crafting Iconic Luxury Spaces
             <br className="hidden md:block" />
-            <span className="font-light italic text-white/85">
-              made to be lived in
+            <span className="font-light italic text-white/85 text-[4.5rem]">
+              for Visionary Investors
             </span>
           </h1>
 
           {/* Paragraph */}
-          <p className="animate-fade-up-delayed-2 mx-auto mt-6 max-w-xl text-sm leading-7 text-white/75 md:text-base md:leading-normal">
-            We create elegant, highly considered spaces that balance architecture,
-            comfort, and character — designed for modern living and lasting beauty across UK.
+          <p className="animate-fade-up-delayed-2 mx-auto mt-6 max-w-2xl text-sm leading-7 text-white/75 md:text-base md:leading-normal">
+            We create bespoke architecture and interiors for luxury residences and premium commercial spaces — tailored for international investors, developers, and discerning private clients.
           </p>
 
           {/* CTA - Updated Hrefs */}

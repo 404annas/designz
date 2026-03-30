@@ -5,20 +5,20 @@ import { Quote } from 'lucide-react'; // Optional: npm install lucide-react
 
 const testimonials = [
   {
-    content: "Designz transformed our London apartment into a masterpiece. Their attention to architectural detail is truly unmatched and the process was seamless.",
-    author: "Sarah Jenkins",
+    content: "As an architect i worked with saleha on one of the interior design project. The outcome was brilliant. Client was very pleased with the results. she is very professional!!",
+    author: "Sameera Dalvi",
     role: "Private Client, London",
     image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=150&h=150&auto=format&fit=crop"
   },
   {
-    content: "The team balanced comfort and luxury perfectly. Our Yorkshire estate feels like a true reflection of our character and heritage. Simply outstanding work.",
-    author: "David Radcliffe",
+    content: "I wanted to post a review of the decoration project with Dwell Rich( SK). The execution was smooth and timely. I am happy with the final look of the room and corridor...",
+    author: "Jay",
     role: "Estate Owner, Yorkshire",
     image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=150&h=150&auto=format&fit=crop"
   },
   {
-    content: "Highly professional and visionary. They managed the entire execution flawlessly from the first sketch to the final installation. I couldn't be happier.",
-    author: "Elena Rossi",
+    content: "We are delighted that the project can finally get underway. The service provided by Saleha, Interior designer, invaluable in terms of finding the right interior designer.",
+    author: "Brenda",
     role: "Interior Architect",
     image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=150&h=150&auto=format&fit=crop"
   }

@@ -6,27 +6,33 @@ import { motion } from "framer-motion";
 const steps = [
   {
     num: "01",
-    title: "Inception",
-    label: "CONSULTATION",
-    desc: "A focused dialogue to define the architectural narrative, lifestyle requirements, and the unique vision for your space.",
+    title: "CONSULTATION",
+    label: "Value-Optimised Procurement",
+    desc: "Value-optimised procurement without compromising material quality or design intent.",
   },
   {
     num: "02",
-    title: "Curation",
-    label: "DESIGN & DETAIL",
-    desc: "The meticulous selection of tactile palettes, technical drawings, and bespoke joinery tailored to the UK heritage.",
+    title: "DESIGN & DETAIL",
+    label: "Client-Centric Approach",
+    desc: "Experience design with a personal touch! Your dreams, our blueprint—unleashing home décor excellence just for you!",
   },
   {
     num: "03",
-    title: "Realisation",
-    label: "EXECUTION",
-    desc: "Disciplined project management and artisanal installation, ensuring the design is delivered to exact specifications.",
+    title: "EXECUTION",
+    label: "Environmental Responsibility",
+    desc: "Eco-chic transformations await! Dive into sustainable style with our budget-friendly, energy-smart designs!",
+  },
+  {
+    num: "04",
+    title: "FINAL STYLING",
+    label: "Attention to Detail",
+    desc: "Crafting perfection in every detail! From space wizardry to color mastery and texture symphonies—immerse yourself!",
   },
 ];
 
 const Process = () => {
   return (
-    <section id="process" className="bg-black text-white py-20 px-8">
+    <section id="process" className="bg-black text-white py-20 px-4">
       <div className="max-w-6xl mx-auto">
         
         {/* Minimalist Header */}
@@ -34,7 +40,7 @@ const Process = () => {
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-8">
             <div className="space-y-2">
               <p className="text-xs tracking-wide text-zinc-500 uppercase font-medium">
-                Our Methodology
+                Our Approach
               </p>
               <h2 className="text-4xl md:text-5xl font-thin font-serif tracking-tight uppercase">
                 The <span className="font-normal">Process</span>
@@ -48,7 +54,7 @@ const Process = () => {
         </div>
 
         {/* Steps Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
           {steps.map((step, i) => (
             <motion.div 
               key={i}

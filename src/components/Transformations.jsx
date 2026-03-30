@@ -3,28 +3,35 @@
 import React, { useState, useRef, useCallback } from 'react';
 import { motion } from 'framer-motion';
 
+import transformBefore1 from "@/assets/transformBefore1.png"
+import transformAfter1 from "@/assets/transformAfter1.webp"
+import transformBefore2 from "@/assets/transformBefore2.png"
+import transformAfter2 from "@/assets/transformAfter2.webp"
+import transformBefore3 from "@/assets/transformBefore3.png"
+import transfromAfter3 from "@/assets/transformAfter3.webp"
+
 // ─── DATA: UK BESPOKE INTERIOR DESIGN ─────────────────────────────────────────
 const transformations = [
   {
-    title: "Kensington Townhouse",
-    location: "London W8",
-    description: "A complete architectural reimagining of a Grade II listed kitchen. We replaced dated cabinetry with bespoke English oak joinery and Italian marble, flooding the lower ground floor with natural light.",
-    before: "https://images.unsplash.com/photo-1503174971373-b1f69850bded?w=2000&auto=format&fit=crop&q=100&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGludGVyaW9yJTIwZGVzaWdufGVufDB8fDB8fHww", 
-    after:  "https://images.unsplash.com/photo-1664711942326-2c3351e215e6?w=2000&auto=format&fit=crop&q=100&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGludGVyaW9yJTIwZGVzaWdufGVufDB8fDB8fHww", 
+    title: "kingston upon thames",
+    location: "London UK",
+    description: "Based in the Royal Borough of Kingston, it is a Modern Home Oasis, renovated by Exclusif Desingz with a focus on minimalism, functionality, maximum usage of space and light. The carefully curated foyer is both inviting and practical.",
+    before: transformBefore1.src, 
+    after:  transformAfter1.src, 
   },
   {
-    title: "Cotswolds Heritage Manor",
-    location: "Gloucestershire",
-    description: "Restoring the soul of a 17th-century drawing room. By removing heavy partitions and restoring original stonework, we created a sanctuary that balances rural heritage with contemporary artisanal comfort.",
-    before: "https://images.unsplash.com/photo-1493809842364-78817add7ffb?q=80&w=1200", 
-    after:  "https://images.unsplash.com/photo-1606744824163-985d376605aa?w=1000&auto=format&fit=crop&q=100&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGludGVyaW9yJTIwZGVzaWdufGVufDB8fDB8fHww", 
+    title: "chelsea flat",
+    location: "London UK",
+    description: "This beautifully refurbished flat demonstrates how thoughtful design and targeted upgrades can transform a home. By focusing on the living area and bedroom, the property was enhanced to a high standard, improving everyday comfort while also increasing overall market value.",
+    before: transformBefore2.src, 
+    after:  transformAfter2.src, 
   },
   {
-    title: "Mayfair Penthouse",
-    location: "London W1",
-    description: "A master suite transformation defined by texture and tranquility. Incorporating silk-lined walls, custom brass detailing, and a sophisticated lighting scheme tailored for a global collector.",
-    before: "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1200", 
-    after:  "https://images.unsplash.com/photo-1616594039964-ae9021a400a0?q=80&w=1200", 
+    title: "bromley",
+    location: "London UK",
+    description: "Refurbishing the most prominent areas of a home is one of the most effective ways to increase its value. Spaces such as the kitchen and living area shape first impressions and play a major role in how a property is perceived by both homeowners and investors.",
+    before: transformBefore3.src, 
+    after:  transfromAfter3.src, 
   },
 ];
 
