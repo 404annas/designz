@@ -1,33 +1,33 @@
 import React from 'react';
 
-import gallery1 from "@/assets/gallery7.webp"
-import gallery2 from "@/assets/gallery5.webp"
+import gallery1 from "@/assets/gallery10.webp"
+import gallery2 from "@/assets/gallery8.webp"
 import gallery3 from "@/assets/gallery3.webp"
-import gallery4 from "@/assets/gallery4.webp"
-import gallery5 from "@/assets/gallery6.webp"
+import gallery4 from "@/assets/gallery9.webp"
+import gallery5 from "@/assets/gallery3.webp"
 
 const projects = [
   {
-    title: "Classic Kitchen",
+    title: "Cheam Surrey",
     category: "Modern",
     image: gallery5.src,
     gridClass: "md:col-span-2 md:row-span-2" 
   },
   {
-    title: "Biophillic Oasis",
-    category: "Modern",
+    title: "Boho Eclectic Style",
+    category: "Living Room",
     image: gallery2.src,
     gridClass: "md:col-span-1 md:row-span-2"
   },
 
   {
-    title: "Bathroom",
+    title: "Chelsea Flat",
     category: "Luxury",
     image: gallery1.src,
     gridClass: "md:col-span-1 md:row-span-2"
   },
   {
-    title: "BAR",
+    title: "Chelsea Flat",
     category: "Modern",
     image: gallery4.src,
     gridClass: "md:col-span-2 md:row-span-2"
