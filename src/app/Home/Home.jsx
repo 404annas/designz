@@ -22,10 +22,10 @@ const Home = () => {
       <section id="our-services">
         <Services />
       </section>
+      <Showcase />
       <section id="process">
         <Process />
       </section>
-      <Showcase />
 
       <section id="testimonials">
         <Testimonials />

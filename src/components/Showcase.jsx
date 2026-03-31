@@ -1,32 +1,27 @@
 import React from 'react';
 
-import gallery1 from "@/assets/gallery1.webp"
-import gallery2 from "@/assets/gallery2.webp"
+import gallery1 from "@/assets/gallery7.webp"
+import gallery2 from "@/assets/gallery5.webp"
 import gallery3 from "@/assets/gallery3.webp"
 import gallery4 from "@/assets/gallery4.webp"
-import gallery5 from "@/assets/gallery5.webp"
+import gallery5 from "@/assets/gallery6.webp"
 
 const projects = [
   {
-    title: "Biophillic Oasis",
+    title: "Classic Kitchen",
     category: "Modern",
     image: gallery5.src,
     gridClass: "md:col-span-2 md:row-span-2" 
   },
   {
-    title: "Living Room - Boho",
-    category: "Luxury",
+    title: "Biophillic Oasis",
+    category: "Modern",
     image: gallery2.src,
-    gridClass: "md:col-span-1 md:row-span-1"
+    gridClass: "md:col-span-1 md:row-span-2"
   },
+
   {
-    title: "Cheam Surrey",
-    category: "Small Spaces",
-    image: gallery3.src,
-    gridClass: "md:col-span-1 md:row-span-1"
-  },
-  {
-    title: "Classic Kitchen",
+    title: "Bathroom",
     category: "Luxury",
     image: gallery1.src,
     gridClass: "md:col-span-1 md:row-span-2"
@@ -41,7 +36,7 @@ const projects = [
 
 const Showcase = () => {
   return (
-    <section className="bg-white py-14">
+    <section className="bg-white pt-10 pb-14">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         
         {/* --- Centered Header --- */}

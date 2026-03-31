@@ -17,9 +17,9 @@ const testimonials = [
     image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=150&h=150&auto=format&fit=crop"
   },
   {
-    content: "We are delighted that the project can finally get underway. The service provided by Saleha, Interior designer, invaluable in terms of finding the right interior designer.",
-    author: "Brenda",
-    role: "Interior Architect",
+    content: "Saleha has been brilliant all along. She designed our living room and changed it to extraordinary and special. Not least, Saleha is approachable and a wonderful human being.",
+    author: "Deepa",
+    role: "Client, London",
     image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=150&h=150&auto=format&fit=crop"
   }
 ];
@@ -56,7 +56,7 @@ const Testimonials = () => {
                 </p>
               </div>
               
-              <div className="mt-8 flex items-center gap-x-4 border-t border-gray-100 pt-6">
+              <div className="mt-6 flex items-center gap-x-4 border-t border-gray-100 pt-6">
                 <img 
                   src={testimonial.image} 
                   alt={testimonial.author} 

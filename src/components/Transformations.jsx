@@ -30,7 +30,7 @@ const transformations = [
     title: "bromley",
     location: "London UK",
     description: "Refurbishing the most prominent areas of a home is one of the most effective ways to increase its value. Spaces such as the kitchen and living area shape first impressions and play a major role in how a property is perceived by both homeowners and investors.",
-    before: <transformBefore3 className="src">l</transformBefore3>, 
+    before: transformBefore3.src, 
     after:  transfromAfter3.src, 
   },
 ];
