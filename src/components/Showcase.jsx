@@ -37,14 +37,14 @@ const projects = [
 const Showcase = () => {
   return (
     <section className="bg-white pt-10 pb-14">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl px-4 md:px-6 lg:px-8">
         
         {/* --- Centered Header --- */}
         <div className="text-center max-w-2xl mx-auto mb-10">
-          <h2 className="text-3xl md:text-4xl font-serif font-thin uppercase tracking-tight text-black mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif font-thin uppercase tracking-tight text-black mb-4">
             Our Style Showcase
           </h2>
-          <p className="text-gray-700 text-base leading-normal">
+          <p className="text-gray-700 text-sm md:text-base leading-normal">
             A curated selection of our finest interior works, ranging from expansive luxury estates 
             to highly functional minimalist urban dwellings.
           </p>

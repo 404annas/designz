@@ -57,16 +57,16 @@ const ContactForm = () => {
     }
   };
   return (
-    <section id="contact" className="bg-white py-10 px-6 md:px-8 lg:px-12">
+    <section id="contact" className="bg-white py-10 px-4 sm:px-6 md:px-8 lg:px-12">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-12 lg:gap-24 items-stretch">
         
         {/* Left Side: Form Content */}
         <div className="flex-1 flex flex-col justify-center">
           <div className="mb-10">
-            <h2 className="text-4xl md:text-5xl font-light tracking-tight text-[#1a1a1a] mb-4 uppercase font-serif">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-light tracking-tight text-[#1a1a1a] mb-4 uppercase font-serif">
               Get In Touch
             </h2>
-            <p className="text-gray-500 max-w-xl leading-normal font-regular">
+            <p className="text-gray-500 max-w-xl leading-normal md:text-base text-sm font-regular">
               Are you planning to design your project but don’t know how to shape it? Leave your information for immediate consultation.
             </p>
           </div>

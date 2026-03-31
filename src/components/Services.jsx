@@ -51,14 +51,14 @@ const Services = () => {
 
   return (
     <section className="bg-white pt-14 pb-10">
-      <div className="mx-auto max-w-7xl px-6 lg:px-12">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-12">
 
         {/* Header Section */}
         <div className="max-w-2xl mb-12">
-          <h2 className="text-sm font-medium text-black uppercase mb-4">
+          <h2 className="text-xs md:text-sm font-medium text-black uppercase mb-4">
             Our Services
           </h2>
-          <p className="text-3xl md:text-4xl font-thin uppercase font-serif tracking-tight text-gray-900">
+          <p className="text-2xl sm:text-3xl md:text-4xl font-thin uppercase font-serif tracking-tight text-gray-900">
             Professional solutions for <br className="hidden md:block" /> sophisticated environments.
           </p>
         </div>

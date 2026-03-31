@@ -64,16 +64,16 @@ const Hero = () => {
             </p>
           </div>
 
-          <h1 className="animate-fade-up-delayed mx-auto max-w-5xl font-serif text-3xl leading-18 tracking-tight md:text-5xl lg:text-6xl xl:text-[5rem]">
+          <h1 className="animate-fade-up-delayed mx-auto max-w-5xl font-serif text-2xl md:text-3xl lg:leading-18 tracking-tight md:text-5xl lg:text-6xl xl:text-[5rem]">
             Crafting Iconic Luxury Spaces
-            <br className="hidden md:block" />
-            <span className="font-light italic text-white/85 text-[4.5rem]">
+            <br className="block" />
+            <span className="font-light italic text-white/85 text-2xl sm:text-[2rem] md:text-[3rem] lg:text-[4.5rem]">
               for Visionary Investors
             </span>
           </h1>
 
           {/* Paragraph */}
-          <p className="animate-fade-up-delayed-2 mx-auto mt-6 max-w-2xl text-sm leading-7 text-white/75 md:text-base md:leading-normal">
+          <p className="animate-fade-up-delayed-2 mx-auto mt-6 max-w-2xl text-sm leading-6 md:leading-7 text-white/75 md:text-base md:leading-normal">
             We create bespoke architecture and interiors for luxury residences and premium commercial spaces — tailored for international investors, developers, and discerning private clients.
           </p>
 
@@ -84,7 +84,7 @@ const Hero = () => {
               onClick={scrollToContact}
               className="group relative inline-flex items-center justify-center overflow-hidden border border-white/35 px-8 py-4 transition-all duration-500 hover:border-white cursor-pointer"
             >
-              <span className="relative z-10 text-xs font-medium uppercase tracking-wider text-white transition-colors duration-500 group-hover:text-black">
+              <span className="relative z-10 text-[10px] sm:text-xs font-medium uppercase tracking-wider text-white transition-colors duration-500 group-hover:text-black">
                 Book Free Consultation
               </span>
               <span className="absolute inset-0 translate-y-[101%] bg-white transition-transform duration-500 ease-in-out group-hover:translate-y-0" />

@@ -111,21 +111,21 @@ const CompareSlider = ({ before, after, title }) => {
 
       {/* LABELS */}
       <div 
-        className="absolute top-4 left-4 text-xs tracking-wider uppercase text-white font-light bg-black/45 backdrop-blur-md px-3 py-1 transition-opacity duration-300"
+        className="absolute top-4 left-4 text-[10px] sm:text-xs tracking-wider uppercase text-white font-light bg-black/45 backdrop-blur-md px-3 py-1 transition-opacity duration-300"
         style={{ opacity: pos > 15 ? 1 : 0 }}
       >
         Before
       </div>
 
       <div 
-        className="absolute top-4 right-4 text-xs tracking-wider uppercase text-white font-light bg-[#2a1f1f]/60 backdrop-blur-md px-3 py-1 transition-opacity duration-300"
+        className="absolute top-4 right-4 text-[10px] sm:text-xs tracking-wider uppercase text-white font-light bg-[#2a1f1f]/60 backdrop-blur-md px-3 py-1 transition-opacity duration-300"
         style={{ opacity: pos < 85 ? 1 : 0 }}
       >
         After
       </div>
 
       {/* HINT */}
-      <div className="absolute bottom-4 left-1/2 -translate-x-1/2 text-xs tracking-wider uppercase text-white/80 font-extralight pointer-events-none whitespace-nowrap">
+      <div className="absolute bottom-4 left-1/2 -translate-x-1/2 text-[10px] sm:text-xs tracking-wider uppercase text-white/80 font-extralight pointer-events-none whitespace-nowrap">
         ← Drag to reveal →
       </div>
     </div>
@@ -142,7 +142,7 @@ const Transformations = () => {
   };
 
   return (
-    <section id="transformations" className="bg-[#faf8f5] py-10 px-6 md:px-12 text-[#2a1f1f] overflow-hidden">
+    <section id="transformations" className="bg-[#faf8f5] py-10 px-4 sm:px-6 md:px-12 text-[#2a1f1f] overflow-hidden">
       {/* Font Imports - Can also be added to your global CSS */}
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@200;300;400&display=swap');
@@ -154,7 +154,7 @@ const Transformations = () => {
       <div className="text-center max-w-xl mx-auto mb-10 font-sans-lux">
         <div className="flex items-center gap-5 justify-center mb-7">
           <div className="flex-1 h-px bg-[#2a1f1f]/20" />
-          <span className="text-sm uppercase text-[#8d7b7b] font-medium">
+          <span className="text-xs sm:text-sm uppercase text-[#8d7b7b] font-medium">
             Interior Craftsmanship
           </span>
           <div className="flex-1 h-px bg-[#2a1f1f]/20" />
@@ -164,7 +164,7 @@ const Transformations = () => {
           Transformations
         </h2>
 
-        <p className="text-base leading-normal font-regular text-[#2a1f1f]/70 max-w-[600px] mx-auto">
+        <p className="text-sm md:text-base leading-normal font-regular text-[#2a1f1f]/70 max-w-[600px] mx-auto">
           We don't simply renovate; we reimagine. Witness the journey from 
           uninspired spaces to highly-considered, bespoke UK interiors.
         </p>
@@ -200,7 +200,7 @@ const Transformations = () => {
 
                 <h3 className="font-serif-lux text-2xl md:text-3xl font-light leading-tight mb-5 tracking-tight uppercase">
                   {project.title}
-                  <span className="block text-base font-semibold -mt-1 text-[#8d7b7b]">{project.location}</span>
+                  <span className="block text-sm sm:text-base font-semibold md:-mt-1 text-[#8d7b7b]">{project.location}</span>
                 </h3>
 
                 <div className="w-20 h-px bg-[#b49b78]/50 mb-6" />
@@ -223,13 +223,13 @@ const Transformations = () => {
 
       {/* FOOTER CTA */}
       <div className="mt-10 text-center border-t border-[#2a1f1f]/10 pt-10 font-sans-lux">
-        <p className="font-serif-lux text-2xl md:text-3xl uppercase font-light text-[#2a1f1f] mb-10">
+        <p className="font-serif-lux text-xl tracking-tight sm:text-2xl md:text-3xl uppercase font-light text-[#2a1f1f] mb-6 md:mb-10">
           Ready to redefine your home?
         </p>
 
         <button
           onClick={scrollToContact}
-          className="bg-[#2a1f1f] text-[#f0ebe3] px-10 py-5 text-xs tracking-wider uppercase font-light hover:scale-95 transition-all duration-300 rounded-2xl cursor-pointer"
+          className="bg-[#2a1f1f] text-[#f0ebe3] px-8 md:px-10 py-5 text-xs tracking-wider uppercase font-light hover:scale-95 transition-all duration-300 rounded-2xl cursor-pointer"
         >
           Consult Us for Free
         </button>

@@ -32,7 +32,7 @@ const steps = [
 
 const Process = () => {
   return (
-    <section id="process" className="bg-black text-white py-20 px-4">
+    <section id="process" className="bg-black text-white py-10 md:py-20 px-4">
       <div className="max-w-6xl mx-auto">
         
         {/* Minimalist Header */}
@@ -42,7 +42,7 @@ const Process = () => {
               <p className="text-xs tracking-wide text-zinc-500 uppercase font-medium">
                 Our Approach
               </p>
-              <h2 className="text-4xl md:text-5xl font-thin font-serif tracking-tight uppercase">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-thin font-serif tracking-tight uppercase">
                 The <span className="font-normal">Process</span>
               </h2>
             </div>
@@ -78,7 +78,7 @@ const Process = () => {
                   <h3 className="text-2xl font-serif font-medium uppercase">
                     {step.title}
                   </h3>
-                  <span className="text-xs tracking-wide text-zinc-500 font-bold uppercase">
+                  <span className="text-[10px] sm:text-xs tracking-wide text-zinc-500 font-bold uppercase">
                     {step.label}
                   </span>
                 </div>
