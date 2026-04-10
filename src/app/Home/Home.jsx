@@ -19,10 +19,10 @@ const Home = () => {
       <section id="about-us">
         <Transformations />
       </section>
+      <Showcase />
       <section id="our-services">
         <Services />
       </section>
-      <Showcase />
       <section id="process">
         <Process />
       </section>

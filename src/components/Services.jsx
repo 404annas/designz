@@ -50,7 +50,7 @@ const Services = () => {
   };
 
   return (
-    <section className="bg-white pt-14 pb-10">
+    <section className="bg-white pb-10">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-12">
 
         {/* Header Section */}

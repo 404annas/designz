@@ -3,7 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import logo from "@/assets/logo.webp"; // Ensure path is correct
-import { MapPin, Mail, Phone } from "lucide-react";
+import { MapPin, Mail, Phone, Globe } from "lucide-react";
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import Link from "next/link";
 
@@ -13,9 +13,8 @@ export default function Footer() {
       {/* --- Main Footer Content --- */}
       <div className="max-w-[1440px] mx-auto px-6 py-6">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-12 md:gap-10">
-
           {/* LEFT: Addresses (Stacked with Pin Icons) */}
-          <div className="flex flex-col gap-8 order-2 md:order-1 text-sm w-full md:w-auto items-start">
+          <div className="flex flex-col gap-4 order-2 md:order-1 text-sm w-full md:w-auto items-start">
             <div className="flex items-start gap-3 text-left">
               <MapPin className="text-white mt-1 shrink-0" size={24} />
               <p className="leading-relaxed">
@@ -32,6 +31,16 @@ export default function Footer() {
                 London W1S 4JL
               </p>
             </div>
+
+            <Link
+              href="https://designz.dwell-rich.com/"
+              className="flex items-center group cursor-pointer font-semibold gap-2 pl-0.5"
+            >
+              <p>
+                <Globe size={20} />
+              </p>
+              Designz.Dwell.Rich
+            </Link>
           </div>
 
           {/* CENTER: Logo & Company Reg (Same as Image) */}
@@ -60,7 +69,9 @@ export default function Footer() {
             <div className="space-y-4">
               <div className="flex items-center gap-3 justify-start md:justify-start">
                 <Mail size={18} className="text-white shrink-0" />
-                <a href="mailto:hello@designz.dwell-rich.com">hello@designz.dwell-rich.com</a>
+                <a href="mailto:hello@designz.dwell-rich.com">
+                  hello@designz.dwell-rich.com
+                </a>
               </div>
               <div className="flex items-center gap-3 justify-start md:justify-start">
                 <Phone size={18} className="text-white shrink-0" />
@@ -70,18 +81,32 @@ export default function Footer() {
 
             {/* Social Icons with brand colors from image */}
             <div className="flex gap-3 justify-start md:justify-start">
-              <a href="https://www.facebook.com/share/1BLQoRWi6P/?mibextid=wwXIfr" target="_blank" rel="noreferrer" className="w-10 h-10 flex items-center justify-center bg-[#1877F2] rounded-full">
+              <a
+                href="https://www.facebook.com/share/1BLQoRWi6P/?mibextid=wwXIfr"
+                target="_blank"
+                rel="noreferrer"
+                className="w-10 h-10 flex items-center justify-center bg-[#1877F2] rounded-full"
+              >
                 <FaFacebookF className="text-white" size={18} />
               </a>
-              <a href="https://www.instagram.com/p/DOzRdycjPme/?igsh=MXd4bzA5ODd5MGR2bw==" target="_blank" rel="noreferrer" className="w-10 h-10 flex items-center justify-center bg-[#E4405F] rounded-full">
+              <a
+                href="https://www.instagram.com/p/DOzRdycjPme/?igsh=MXd4bzA5ODd5MGR2bw=="
+                target="_blank"
+                rel="noreferrer"
+                className="w-10 h-10 flex items-center justify-center bg-[#E4405F] rounded-full"
+              >
                 <FaInstagram className="text-white" size={18} />
               </a>
-              <a href="https://uk.linkedin.com/in/saleha-ali-khan" target="_blank" rel="noreferrer" className="w-10 h-10 flex items-center justify-center bg-[#0A66C2] rounded-full">
+              <a
+                href="https://uk.linkedin.com/in/saleha-ali-khan"
+                target="_blank"
+                rel="noreferrer"
+                className="w-10 h-10 flex items-center justify-center bg-[#0A66C2] rounded-full"
+              >
                 <FaLinkedinIn className="text-white" size={18} />
               </a>
             </div>
           </div>
-
         </div>
       </div>
 
