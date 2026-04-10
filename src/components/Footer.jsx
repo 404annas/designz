@@ -8,6 +8,7 @@ import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import Link from "next/link";
 
 
+
 export default function Footer() {
   return (
     <footer className="bg-black text-white">
