@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import { User, Mail, Phone, MessageSquare, ArrowRight, ChevronDown } from 'lucide-react';
 import emailjs from '@emailjs/browser';
+import contactVisual from '@/assets/gallery6.webp';
 import { trackLeadSubmission } from '@/lib/tracking';
 
 const SERVICES = [
@@ -186,12 +187,11 @@ const ContactForm = () => {
         {/* Right Side: Support Image */}
         <div className="flex-1 w-full min-h-[500px] overflow-hidden hidden lg:block rounded-xl grayscale-[20%] hover:grayscale-0 transition-all duration-1000">
           <Image
-            src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=100&w=2000" 
-            alt="Bespoke Living Space" 
-            width={2000}
-            height={1500}
-            unoptimized
-            className="h-full w-full object-cover transform scale-100 hover:scale-105 transition-transform duration-[2s]" 
+            src={contactVisual}
+            alt="Bespoke Living Space"
+            placeholder="blur"
+            sizes="(max-width: 1024px) 100vw, 50vw"
+            className="h-full w-full object-cover transform scale-100 hover:scale-105 transition-transform duration-[2s]"
           />
         </div>
       </div>

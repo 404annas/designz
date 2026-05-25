@@ -10,7 +10,7 @@ const Navbar = () => {
       {/* 1. Logo Section - More refined spacing */}
       <Link href="https://designz.dwell-rich.com/" className="flex items-center group cursor-pointer font-semibold gap-2">
       <p><Globe size={20}/></p>
-        Designz.Dwell.Rich
+        Designz.Dwell.Rich.
       </Link>
 
       {/* 2. Social Icons & CTA */}
