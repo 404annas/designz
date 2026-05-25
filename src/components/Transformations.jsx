@@ -2,12 +2,13 @@
 
 import React, { useState, useRef, useCallback } from 'react';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
-import transformBefore1 from "@/assets/transformBefore1.png"
+import transformBefore1 from "@/assets/transformBefore1.webp"
 import transformAfter1 from "@/assets/transformAfter1.webp"
-import transformBefore2 from "@/assets/transformBefore2.png"
+import transformBefore2 from "@/assets/transformBefore2.webp"
 import transformAfter2 from "@/assets/transformAfter2.webp"
-import transformBefore3 from "@/assets/transformBefore3.png"
+import transformBefore3 from "@/assets/transformBefore3.webp"
 import transfromAfter3 from "@/assets/transformAfter3.webp"
 
 // ─── DATA: UK BESPOKE INTERIOR DESIGN ─────────────────────────────────────────
@@ -16,15 +17,15 @@ const transformations = [
     title: "kingston upon thames",
     location: "London UK",
     description: "Based in the Royal Borough of Kingston, it is a Modern Home Oasis, renovated by Exclusif Desingz with a focus on minimalism, functionality, maximum usage of space and light. The carefully curated foyer is both inviting and practical.",
-    before: transformBefore1.src, 
-    after:  transformAfter1.src, 
+    before: transformBefore1, 
+    after:  transformAfter1, 
   },
   {
     title: "chelsea flat",
     location: "London UK",
     description: "This beautifully refurbished flat demonstrates how thoughtful design and targeted upgrades can transform a home. By focusing on the living area and bedroom, the property was enhanced to a high standard, improving everyday comfort while also increasing overall market value.",
-    before: transformBefore2.src, 
-    after:  transformAfter2.src, 
+    before: transformBefore2, 
+    after:  transformAfter2, 
   },
   // {
   //   title: "bromley",
@@ -67,12 +68,14 @@ const CompareSlider = ({ before, after, title }) => {
       onTouchEnd={onUp}
       className={`relative w-full aspect-[16/10] overflow-hidden rounded-sm select-none ${dragging ? 'cursor-grabbing' : 'cursor-grab'}`}
     >
-      {/* AFTER IMAGE */}
-      <img
+      <Image
         src={after}
         alt={`${title} After`}
+        fill
+        sizes="(max-width: 1024px) 100vw, 58vw"
         draggable={false}
-        className="absolute inset-0 w-full h-full object-cover block"
+        placeholder="blur"
+        className="absolute inset-0 h-full w-full object-cover block"
       />
       <div className="absolute inset-0 bg-black/50 pointer-events-none" />
 
@@ -81,11 +84,14 @@ const CompareSlider = ({ before, after, title }) => {
         className="absolute inset-0" 
         style={{ clipPath: `inset(0 ${100 - pos}% 0 0)` }}
       >
-        <img
+        <Image
           src={before}
           alt={`${title} Before`}
+          fill
+          sizes="(max-width: 1024px) 100vw, 58vw"
           draggable={false}
-          className="w-full h-full object-cover block grayscale-[40%] brightness-[0.85]"
+          placeholder="blur"
+          className="h-full w-full object-cover block grayscale-[40%] brightness-[0.85]"
         />
         <div className="absolute inset-0 bg-black/50 pointer-events-none" />
       </div>
@@ -143,13 +149,6 @@ const Transformations = () => {
 
   return (
     <section id="transformations" className="bg-[#faf8f5] py-10 px-4 sm:px-6 md:px-12 text-[#2a1f1f] overflow-hidden">
-      {/* Font Imports - Can also be added to your global CSS */}
-      <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@200;300;400&display=swap');
-        .font-serif-lux { font-family: 'Cormorant Garamond', serif; }
-        .font-sans-lux { font-family: 'Jost', sans-serif; }
-      `}</style>
-
       {/* SECTION HEADER */}
       <div className="text-center max-w-xl mx-auto mb-10 font-sans-lux">
         <div className="flex items-center gap-5 justify-center mb-7">
@@ -165,7 +164,7 @@ const Transformations = () => {
         </h2>
 
         <p className="text-sm md:text-base leading-normal font-regular text-[#2a1f1f]/70 max-w-[600px] mx-auto">
-          We don't simply renovate; we reimagine. Witness the journey from 
+          We don&apos;t simply renovate; we reimagine. Witness the journey from 
           uninspired spaces to highly-considered, bespoke UK interiors.
         </p>
       </div>

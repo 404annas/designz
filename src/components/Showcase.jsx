@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 import gallery1 from "@/assets/gallery10.webp"
 import gallery2 from "@/assets/gallery8.webp"
@@ -10,26 +11,26 @@ const projects = [
   {
     title: "Cheam Surrey",
     category: "Modern",
-    image: gallery5.src,
+    image: gallery5,
     gridClass: "md:col-span-2 md:row-span-2" 
   },
   {
     title: "Boho Eclectic Style",
     category: "Living Room",
-    image: gallery2.src,
+    image: gallery2,
     gridClass: "md:col-span-1 md:row-span-2"
   },
 
   {
     title: "Chelsea Flat",
     category: "Luxury",
-    image: gallery1.src,
+    image: gallery1,
     gridClass: "md:col-span-1 md:row-span-2"
   },
   {
     title: "Chelsea Flat",
     category: "Modern",
-    image: gallery4.src,
+    image: gallery4,
     gridClass: "md:col-span-2 md:row-span-2"
   }
 ];
@@ -57,11 +58,13 @@ const Showcase = () => {
               key={index} 
               className={`group relative overflow-hidden rounded-xl bg-gray-100 ${project.gridClass}`}
             >
-              {/* Image */}
-              <img
+              <Image
                 src={project.image}
                 alt={project.title}
-                className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                placeholder="blur"
+                className="object-cover transition-transform duration-700 group-hover:scale-105"
               />
 
               {/* Permanent Dark Overlay for text clarity */}

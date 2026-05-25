@@ -1,52 +1,62 @@
-'use client';
+"use client";
 
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from "react";
+import Image from "next/image";
 
-import hero1 from "@/assets/hero1.webp"
-import hero2 from "@/assets/hero2.webp"
-import hero3 from "@/assets/hero3.webp"
+import hero1 from "@/assets/hero1.webp";
+import hero2 from "@/assets/hero2.webp";
+import hero3 from "@/assets/hero3.webp";
 
-const heroImages = [
-  hero1.src,
-  hero2.src,
-  hero3.src
-];
+const heroImages = [hero1, hero2, hero3];
 
 const Hero = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const scrollToContact = () => {
-    const contactSection = document.getElementById('contact');
+    const contactSection = document.getElementById("contact");
     if (contactSection) {
-      contactSection.scrollIntoView({ behavior: 'smooth' });
+      contactSection.scrollIntoView({ behavior: "smooth" });
     }
   };
 
   useEffect(() => {
     const timer = setInterval(() => {
-      setCurrentIndex((prev) => (prev === heroImages.length - 1 ? 0 : prev + 1));
+      setCurrentIndex((prev) =>
+        prev === heroImages.length - 1 ? 0 : prev + 1,
+      );
     }, 5000);
 
     return () => clearInterval(timer);
   }, []);
 
   return (
-    <section id="home" className="relative min-h-screen w-full overflow-hidden bg-[#111111] text-white">
+    <section
+      id="home"
+      className="relative min-h-screen w-full overflow-hidden bg-[#111111] text-white"
+    >
       {/* Background Slider */}
       <div className="absolute inset-0">
         {heroImages.map((image, index) => (
           <div
             key={index}
             className={`absolute inset-0 will-change-transform transition-all duration-[2200ms] ease-out ${
-              index === currentIndex ? 'opacity-100 scale-105' : 'opacity-0 scale-100'
+              index === currentIndex
+                ? "opacity-100 scale-105"
+                : "opacity-0 scale-100"
             }`}
-            style={{
-              backgroundImage: `url(${image})`,
-              backgroundSize: 'cover',
-              backgroundPosition: 'center',
-            }}
             aria-hidden="true"
-          />
+          >
+            <Image
+              src={image}
+              alt=""
+              fill
+              preload={index === 0}
+              fetchPriority={index === 0 ? "high" : undefined}
+              sizes="100vw"
+              placeholder="blur"
+              className="object-cover"
+            />
+          </div>
         ))}
       </div>
 
@@ -60,7 +70,7 @@ const Hero = () => {
           {/* Eyebrow */}
           <div className="mb-6 overflow-hidden">
             <p className="animate-fade-up text-[10px] font-light tracking-widest uppercase text-white/80 md:text-xs">
-               Interior Design 
+              Interior Design
             </p>
           </div>
 
@@ -108,7 +118,9 @@ const Hero = () => {
             >
               <span
                 className={`block w-[2px] transition-all duration-500 ${
-                  isActive ? 'h-10 bg-white' : 'h-4 bg-white/25 group-hover:bg-white/60'
+                  isActive
+                    ? "h-10 bg-white"
+                    : "h-4 bg-white/25 group-hover:bg-white/60"
                 }`}
               />
             </button>
@@ -116,7 +128,6 @@ const Hero = () => {
         })}
       </div>
 
-      
       <style jsx>{`
         @keyframes fadeUp {
           from {

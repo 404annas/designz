@@ -1,0 +1,6 @@
+RewriteEngine On
+
+# Force the canonical host and HTTPS for all requests.
+RewriteCond %{HTTPS} !=on [OR]
+RewriteCond %{HTTP_HOST} ^www\.services\.dwell-rich\.com$ [NC]
+RewriteRule ^ https://services.dwell-rich.com%{REQUEST_URI} [L,R=301]

@@ -60,7 +60,7 @@ export default function Footer() {
                 />
               </Link>
             </div>
-            <h2 className="text-2xl font-semibold mb-1">Dwell Rich Ltd.</h2>
+            <p className="text-2xl font-semibold mb-1">Dwell Rich Ltd.</p>
             <p className="text-xs text-white">
               (Company Registeration: 12592480)
             </p>

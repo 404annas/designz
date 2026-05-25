@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 import { Quote } from "lucide-react"; // Optional: npm install lucide-react
 
 const testimonials = [
@@ -36,12 +37,12 @@ const Testimonials = () => {
       <div className="mx-auto max-w-7xl px-4 md:px-6 lg:px-8">
         {/* Header */}
         <div className="mx-auto max-w-2xl text-center mb-16">
-          <h2 className="text-xs md:text-sm font-semibold tracking-wide text-black uppercase">
+          <p className="text-xs md:text-sm font-semibold tracking-wide text-black uppercase">
             Testimonials
-          </h2>
-          <p className="mt-3 text-2xl sm:text-3xl md:text-4xl font-thin font-serif uppercase tracking-tight text-gray-900">
-            Trusted by clients
           </p>
+          <h2 className="mt-3 text-2xl sm:text-3xl md:text-4xl font-thin font-serif uppercase tracking-tight text-gray-900">
+            Trusted by clients
+          </h2>
           <div className="mt-4 flex justify-center">
             <div className="h-1 w-12 bg-black rounded-full"></div>
           </div>
@@ -60,15 +61,17 @@ const Testimonials = () => {
                   fill="currentColor"
                 />
                 <p className="text-sm md:text-base leading-normal text-gray-700">
-                  "{testimonial.content}"
+                  &ldquo;{testimonial.content}&rdquo;
                 </p>
               </div>
 
               <div className="mt-6 flex items-center gap-x-4 border-t border-gray-100 pt-6">
-                <img
-                  loading="lazy"
+                <Image
                   src={testimonial.image}
                   alt={testimonial.author}
+                  width={48}
+                  height={48}
+                  unoptimized
                   className="h-12 w-12 rounded-full object-cover bg-gray-50"
                 />
                 <div>

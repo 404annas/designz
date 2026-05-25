@@ -1,8 +1,10 @@
 'use client';
 
 import React, { useState } from 'react';
+import Image from 'next/image';
 import { User, Mail, Phone, MessageSquare, ArrowRight, ChevronDown } from 'lucide-react';
 import emailjs from '@emailjs/browser';
+import { trackLeadSubmission } from '@/lib/tracking';
 
 const SERVICES = [
   "Architectural Designs",
@@ -47,6 +49,7 @@ const ContactForm = () => {
 
     try {
       await emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams, PUBLIC_KEY);
+      trackLeadSubmission(templateParams);
       setSubmitStatus('success');
       setFormData({ name: '', email: '', phone: '', service: '', message: '' });
     } catch (error) {
@@ -182,10 +185,13 @@ const ContactForm = () => {
         
         {/* Right Side: Support Image */}
         <div className="flex-1 w-full min-h-[500px] overflow-hidden hidden lg:block rounded-xl grayscale-[20%] hover:grayscale-0 transition-all duration-1000">
-          <img 
+          <Image
             src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=100&w=2000" 
-            className="w-full h-full object-cover transform scale-100 hover:scale-105 transition-transform duration-[2s]" 
             alt="Bespoke Living Space" 
+            width={2000}
+            height={1500}
+            unoptimized
+            className="h-full w-full object-cover transform scale-100 hover:scale-105 transition-transform duration-[2s]" 
           />
         </div>
       </div>

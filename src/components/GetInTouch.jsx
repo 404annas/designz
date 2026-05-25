@@ -1,4 +1,6 @@
 import React from 'react';
+import Image from 'next/image';
+import galleryDetail from '@/assets/gallery4.webp';
 
 const GetInTouch = () => {
   const scrollToContact = () => {
@@ -35,9 +37,10 @@ const GetInTouch = () => {
 
         {/* --- Right Side: Tall Image with Spacing --- */}
         <div className="flex-1 w-full h-[500px] md:h-[700px] lg:h-[800px] overflow-hidden">
-          <img 
-            src="https://images.squarespace-cdn.com/content/v1/60a3990845075b6c2e920b7f/a1ea852f-60e1-4864-8d02-3b12993ac845/Rachel_Usher_Interior_Design_London_Oakley_26_web_ready.jpg?format=1500w" // Apni image lagayein
+          <Image
+            src={galleryDetail}
             alt="Interior Design Detail"
+            placeholder="blur"
             className="w-full h-full object-cover shadow-sm"
           />
         </div>
